@@ -5,4 +5,4 @@ Scripts for the manuscript 'Identification of transcription factors regulating s
 [Map samples with kallisto](scripts/kallisto_control.pl)
 
 ## 2) Merge samples
-[Merge tpm and counts into a single table for all samples](tximport_summarise_counts_tpm_per_gene.R)
+[Merge tpm and counts into a single table for all samples](scripts/tximport_summarise_counts_tpm_per_gene.R)
