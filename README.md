@@ -19,3 +19,6 @@ This also merges together the gradient tool and ImpulseDE2 results
 
 ## 4) GO enrichment of patterns
 [GO term enrichment of grouped patterns with goseq](scripts/impulseDE_and_gradient_tool_DE_cluster_genes_GO_enrichment_control_tpm.R)
+
+## 5) Prepare data for CSI
+[Prepare data for CSI](scripts/prep_data_CSI.R)
