@@ -16,3 +16,6 @@ Scripts for the manuscript 'Identification of transcription factors regulating s
 ### b) With ImpulseDE2.
 [ImpulseDE2](scripts/ImpulseDE_control.R)
 This also merges together the gradient tool and ImpulseDE2 results
+
+## 4) GO enrichment of patterns
+[GO term enrichment of grouped patterns with goseq](scripts/impulseDE_and_gradient_tool_DE_cluster_genes_GO_enrichment_control_tpm.R)

@@ -1,4 +1,6 @@
 # Aim is to look at gradient tool output and group genes into clusters which have the same expression pattern
+# Philippa Borrill 
+# 29.10.2018
 
 ## first for normalised
 
