@@ -7,7 +7,7 @@ Scripts for the manuscript 'Identification of transcription factors regulating s
 ## 2) Merge samples
 [Merge tpm and counts into a single table for all samples](scripts/tximport_summarise_counts_tpm_per_gene.R)
 
-##3) Differential expression
+## 3) Differential expression
 ### a) With gradient tool
 [Prepare data for gradient tool on cyverse](scripts/prep_data_tpms_gradienttool_cyverse.R)
 
