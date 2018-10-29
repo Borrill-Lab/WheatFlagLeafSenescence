@@ -1,6 +1,7 @@
 #!/usr/bin/perl -w
 
-# p.borrill@bham.ac.uk
+# Philippa Borrill
+# 29.10.2018
 #
 # Aim of script is to run kallisto on RNA-seq for multiple samples to a common reference to calculate expression levels
 

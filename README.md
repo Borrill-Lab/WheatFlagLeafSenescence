@@ -10,6 +10,7 @@ Scripts for the manuscript 'Identification of transcription factors regulating s
 ## 3) Differential expression
 ### a) With gradient tool
 [Prepare data for gradient tool on cyverse](scripts/prep_data_tpms_gradienttool_cyverse.R)
+[Arrange output data from gradient tool into patterns for zscore > |2|](scripts/gradient_tool_arrange_output_to_patterns.R)
 
 ### b) With ImpulseDE2.
 [ImpulseDE2](scripts/ImpulseDE_control.R)
