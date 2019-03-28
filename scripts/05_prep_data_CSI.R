@@ -109,31 +109,31 @@ nrow(DE_TF_max_tpm[DE_TF_max_tpm$max > 8,])
 nrow(DE_TF_max_tpm[DE_TF_max_tpm$max > 9,])
 nrow(DE_TF_max_tpm[DE_TF_max_tpm$max > 10,])
 
-TFs_to_use5tpm <- DE_TF_max_tpm[DE_TF_max_tpm$max > 5,] # 5 tpm threshold
-head(TFs_to_use5tpm)
-dim(TFs_to_use5tpm)
-colnames(TFs_to_use5tpm)[1] <- "gene"
+TFs_to_use5tpm <- DE_TF_max_tpm[DE_TF_max_tpm$max > 0.5,] # 0.5 tpm threshold
+head(TFs_to_use0.5tpm)
+dim(TFs_to_use0.5tpm)
+colnames(TFs_to_use0.5tpm)[1] <- "gene"
 
-## make a dataframe to run in CSI with 5 tpm threshold
+## make a dataframe to run in CSI with 0.5 tpm threshold
 # first for WT select the correct data
 control.tpm.data <- control.tpm.data[,1:30]
 head(control.tpm.data)
 
-control.TF.5tpm <- control.tpm.data[ rownames(control.tpm.data) %in% TFs_to_use5tpm$gene,]
-head(control.TF.5tpm)
-dim(control.TF.5tpm)
-colnames(control.TF.5tpm)
+control.TF.0.5tpm <- control.tpm.data[ rownames(control.tpm.data) %in% TFs_to_use0.5tpm$gene,]
+head(control.TF.0.5tpm)
+dim(control.TF.0.5tpm)
+colnames(control.TF.0.5tpm)
 
 # re-organise
-control.TF.5tpm <- control.TF.5tpm[,c(1,4,7,10,13,16,19,22,25,28,2,5,8,11,14,17,20,23,26,29,3,6,9,12,15,18,21,24,27,30)]
-head(control.TF.5tpm)
-colnames(control.TF.5tpm)
+control.TF.0.5tpm <- control.TF.0.5tpm[,c(1,4,7,10,13,16,19,22,25,28,2,5,8,11,14,17,20,23,26,29,3,6,9,12,15,18,21,24,27,30)]
+head(control.TF.0.5tpm)
+colnames(control.TF.0.5tpm)
 
-control.TF.5tpm <- rbind(c(rep(c("3", "7", "10", "13", "15", "17", "19", "21", "23", "26"),3)),
-                        control.TF.5tpm )
-colnames(control.TF.5tpm) <- rep(c("WT1","WT2","WT3"),each=10)
-head(control.TF.5tpm)
-dim(control.TF.5tpm)
+control.TF.0.5tpm <- rbind(c(rep(c("3", "7", "10", "13", "15", "17", "19", "21", "23", "26"),3)),
+                           control.TF.0.5tpm )
+colnames(control.TF.0.5tpm) <- rep(c("WT1","WT2","WT3"),each=10)
+head(control.TF.0.5tpm)
+dim(control.TF.0.5tpm)
 
-write.csv(file="control_tpm_FLB_5tpm_input_CSI_only_WT_DE_TF.csv",control.TF.5tpm)
+write.csv(file="control_tpm_FLB_0.5tpm_input_CSI_only_WT_DE_TF.csv",control.TF.0.5tpm)
 
